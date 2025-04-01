@@ -1,0 +1,8 @@
+package exercicio;
+
+// Interface AparelhoTelefonico
+public interface AparelhoTelefonico {
+    void ligar(String numero);
+    void atender();
+    void iniciarCorreiroDeVoz();
+}
