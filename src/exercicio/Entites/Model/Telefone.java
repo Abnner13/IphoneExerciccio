@@ -1,4 +1,4 @@
-package exercicio;
+package exercicio.Entites.Model;
 
 // Classe abstrata Telefone
 public abstract class Telefone {

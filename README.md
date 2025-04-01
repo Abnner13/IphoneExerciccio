@@ -1,18 +1,58 @@
-## Getting Started
+### Diagrama UML (Mermaid)
+```mermaid
+classDiagram
+    class Telefone {
+        +String modelo
+        +boolean ligado
+        +int volume
+        +boolean lanternaLigada
+        +getModelo() String
+        +setModelo(String) void
+        +isLigado() boolean
+        +setLigado(boolean) void
+        +getVolume() int
+        +setVolume(int) void
+        +isLanternaLigada() boolean
+        +setLanternaLigada(boolean) void
+        +ligar() void
+        +desligar() void
+    }
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+    class ReprodutorMusical {
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(musica: String) void
+    }
 
-## Folder Structure
+    class AparelhoTelefonico {
+        +ligar(numero: String) void
+        +atender() void
+        +iniciarCorreiroDeVoz() void
+    }
 
-The workspace contains two folders by default, where:
+    class NavegadorNaInternet {
+        +exibirPagina(url: String) void
+        +adicionarNovaAba() void
+        +atualizarPagina() void
+    }
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    class Iphone {
+        +ligar() void
+        +desligar() void
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(musica: String) void
+        +ligar(numero: String) void
+        +atender() void
+        +iniciarCorreiroDeVoz() void
+        +exibirPagina(url: String) void
+        +adicionarNovaAba() void
+        +atualizarPagina() void
+    }
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    Telefone <|-- Iphone
+    ReprodutorMusical <|.. Iphone
+    AparelhoTelefonico <|.. Iphone
+    NavegadorNaInternet <|.. Iphone
+    
+```

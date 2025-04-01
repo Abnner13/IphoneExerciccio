@@ -1,7 +1,11 @@
-package exercicio;
+package exercicio.Entites.Model;
+
+import exercicio.Entites.Interfaces.IAparelhoTelefonico;
+import exercicio.Entites.Interfaces.INavegadorNaInternet;
+import exercicio.Entites.Interfaces.IReprodutorMusical;
 
 // Classe Iphone que herda Telefone e implementa as interfaces
-public class Iphone extends Telefone implements ReprodutorMusical, AparelhoTelefonico, NavegadorNaInternet {
+public class Iphone extends Telefone implements IReprodutorMusical, IAparelhoTelefonico, INavegadorNaInternet {
 
     // Construtor
     public Iphone() {

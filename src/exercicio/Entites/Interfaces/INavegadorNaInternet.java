@@ -1,7 +1,7 @@
-package exercicio;
+package exercicio.Entites.Interfaces;
 
 // Interface NavegadorNaInternet
-public interface NavegadorNaInternet {
+public interface INavegadorNaInternet {
     void exibirPagina(String url);
     void adicionarNovaAba();
     void atualizarPagina();
